@@ -1,5 +1,44 @@
 # eKYC Demo - Rhino Partners
 
-This is a demo application which is using `AWS Rekognition` Custom Labels, Detect Face API, and Compare Face API for Face detection and Comparison, and also for the document detection and identification. Additionally this is using `AWS Textract` for the OCR from the business documents.
+This is a demo application as a PoC for automated eKYC, with face detection with liveness identification, and identity document verification.  
+
+## API Services 
+
+### Services for identifying ID documents 
+
+1. AWS Rekognition Custom Labels
+AutoML tool. With a small train dataset (few hundred or less), this can be used to detect contents on business documents (Field Data Extraction). Also provides a visual interface for labeling the data via AWS SageMaker Ground Truth. 
+
+Use Case: Identify the document type (Whether NIC / Passport / …) and Field Data Extraction
+
+2. AWS Rekognition Detect Face API / Compare Face API
+
+Use Case: Extract the Face image from the submitted documents to verify/compare the camera-captured personal images
+
+3. AWS Textract 
+Extract business data from the documents, forms 
+
+Supports 
+- OCR
+- Signature Detection (bounding box as the result)
+- Form Extraction (Key-Value sets)
+- Query-based extraction (Answer to `What is the name?`)
+- Identity Documents (US Only)
 
 
+### Services to identify the un-edited images 
+
+4. Google’s Document AI
+
+Direct support for Identity Document Proofing 
+https://cloud.google.com/blog/products/ai-machine-learning/text-and-insights-directly-from-your-scans-and-photos/
+
+User Case: Identity Proofing
+
+
+Services to identify the persons 
+
+1. AWS Rekognition Detecting face liveness API  
+Face Liveness Recognition, Supports React with AWS Amplify 
+	
+	User Case: Identify the liveness of a person
