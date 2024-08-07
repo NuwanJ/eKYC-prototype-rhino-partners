@@ -1,0 +1,13 @@
+{
+    "resourceName": "textInterpret",
+    "interpretPolicyName": "interpretPolicy43d34b23",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "interpretType": "interpretText",
+    "type": "ENTITIES",
+    "access": "auth"
+}
