@@ -1,6 +1,6 @@
-# eKYC Demo - Rhino Partners
+# eKYC Prototype - Rhino Partners
 
-This is a demo application as a PoC for automated eKYC, with face detection with liveness identification, and identity document verification.  
+This is a prototype application for automated eKYC, with face detection, liveness identification, and identity document verification.  
 
 ## API Services 
 
