@@ -1,9 +1,6 @@
 # eKYC Prototype - Rhino Partners
 
-This is a prototype application for automated eKYC, with face detection, liveness identification, and identity document verification.
-
-![image](https://github.com/user-attachments/assets/519e09bb-041d-4811-88d1-aef4d8c6b9bf)
-
+This is a prototype application for automated eKYC, with face detection, liveness identification, and identity document verification.  
 
 ## API Services 
 
