@@ -41,7 +41,7 @@ export default () => {
             <Navbar className="navbar-custom">
               <Navbar.Brand href="#">
                 <img src="/logo192.png" alt="Rhino" style={{ width: "64px" }} />
-                <span className="h2 px-2">[POC] KYC Demo</span>
+                <span className="h2 px-2">[POC] KYC Prototype</span>
               </Navbar.Brand>
               <Nav className="ml-auto" style={{ minWidth: "300px;" }}>
                 <span className="logout">
